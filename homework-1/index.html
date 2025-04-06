@@ -111,26 +111,38 @@
       </section>
       <section class="s_4">
         <h1>Наші <span>процедури</span></h1>
-        <ul>
-          <li>
-            <article>
-              <img src="./images/S_4_1.jpg" alt="" />
-              <p>Маски для обличчя</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="./images/S_4_2.jpg" alt="" />
-              <p>Ін'єкції для обличчя</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="./images/S_4_3.jpg" alt="" />
-              <p>Очищення обличчя</p>
-            </article>
-          </li>
-        </ul>
+        <div class="slider-wrapper">
+          <div class="slider-container">
+            <ul class="slider">
+              <li>
+                <article>
+                  <img src="./images/S_4_1.jpg" alt="Маски для обличчя" />
+                  <p>Маски для обличчя</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <img src="./images/S_4_2.jpg" alt="Ін'єкції для обличчя" />
+                  <p>Ін'єкції для обличчя</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <img src="./images/S_4_3.jpg" alt="Очищення обличчя" />
+                  <p>Очищення обличчя</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <!-- Стрелки и точки выносим за пределы .slider-container -->
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
       </section>
       <section>
         <h1>Як нас <span>знайти</span></h1>
@@ -176,5 +188,6 @@
         <p>© 2022 Дані захищені</p>
       </address>
     </footer>
+    <script src="slider.js"></script>
   </body>
 </html>
