@@ -3,62 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeWork-1</title>
+    <title>HomeWork</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
+      <img src="./images/фон.jpg" alt="BackGround" class="background" />
       <a href="#">
-        <img src="#" alt="Logo" />
+        <p class="logo">Beauty Zone</p>
       </a>
       <nav>
-        <ul>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Чому ми</a></li>
-          <li><a href="#">Наші процедури</a></li>
-          <li><a href="#">Контакти</a></li>
+        <ul class="nav-list">
+          <li><a href="#section_about">Про нас</a></li>
+          <li><a href="#section_why">Чому ми</a></li>
+          <li><a href="#section_procedures">Наші процедури</a></li>
+          <li><a href="#section_contact">Контакти</a></li>
         </ul>
       </nav>
       <article>
-        <ul>
+        <ul class="social-list">
           <li>
-            <a href="#"><img src="#" alt="Tel" /></a>
+            <a href="#">
+              <img src="./images/telephone-icon.svg" alt="Tel" />
+            </a>
           </li>
           <li>
-            <a href="#"><img src="#" alt="Facebook" /></a>
+            <a href="#">
+              <img src="./images/uit_facebook-f.svg" alt="Facebook" />
+            </a>
           </li>
           <li>
-            <a href=""><img src="#" alt="Instagram" /></a>
+            <a href="#">
+              <img src="./images/instagram-logo.svg" alt="Instagram" />
+            </a>
           </li>
         </ul>
       </article>
     </header>
     <main>
-      <section>
+      <section id="section_hero" class="hero">
         <p>Косметологічна клініка</p>
-        <h1>beauty zone</h1>
+        <h1>Beauty Zone</h1>
         <button type="button">Замовити дзвінок</button>
-        <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
-      </section>
-      <section>
-        <h1>Перевтілюйтесь в <span>beauty zone!</span></h1>
-        <p>
-          Наша косметологічна клініка пропонує вам професійні послуги з догляду
-          за шкірою обличчя та тіла.
+        <p class="under-button-text">
+          Запишись та отримай безкоштовну консультацію нашого косметолога
         </p>
-        <p>
-          B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
-          приємний сервіс. Наші косметологічні процедури та препарати допоможуть
-          вам підтримувати свою красу та молодість. З нами краса назавжди!
-        </p>
-        <img src="#" alt="" />
-        <img src="#" alt="" />
       </section>
-      <section>
+      <section id="section_about" class="s_2">
+        <div class="s_2_l">
+          <h1>Перевтілюйтесь в <span>Beauty Zone!</span></h1>
+          <p>
+            Наша косметологічна клініка пропонує вам професійні послуги з
+            догляду за шкірою обличчя та тіла.
+          </p>
+          <p>
+            B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти якості та
+            приємний сервіс. Наші косметологічні процедури та препарати
+            допоможуть вам підтримувати свою красу та молодість. <br />
+            З нами краса назавжди!
+          </p>
+        </div>
+        <div class="s_2_r">
+          <img src="./images/изображ..jpg" alt="Img" />
+          <img src="./images/Star_1.png" alt="Star1" class="img_star star1" />
+          <img src="./images/Star_2.jpg" alt="Star2" class="img_star star2" />
+          <img src="./images/Star_3.jpg" alt="Star3" class="img_star star3" />
+        </div>
+      </section>
+      <section id="section_why" class="s_3">
+        <img
+          src="./images/background S3.jpg"
+          alt="BackGround"
+          class="backgroundS_3"
+        />
         <h1>Чому люди <span>обирають нас</span></h1>
         <ul>
           <li>
             <article>
-              <img src="#" alt="" />
+              <img src="./images/S_3_1.svg" alt="1" />
               <p>
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
                 від 5 років
@@ -67,7 +89,7 @@
           </li>
           <li>
             <article>
-              <img src="#" alt="" />
+              <img src="./images/S_3_2.svg" alt="2" />
               <p>
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
@@ -76,7 +98,7 @@
           </li>
           <li>
             <article>
-              <img src="#" alt="" />
+              <img src="./images/S_3_3.svg" alt="3" />
               <p>
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
@@ -85,30 +107,41 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="section_procedures" class="s_4">
         <h1>Наші <span>процедури</span></h1>
-        <ul>
-          <li>
-            <article>
-              <img src="#" alt="" />
-              <p>Маски для обличчя</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="#" alt="" />
-              <p>Ін'єкції для обличчя</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="#" alt="" />
-              <p>Очищення обличчя</p>
-            </article>
-          </li>
-        </ul>
+        <div class="slider-wrapper">
+          <div class="slider-container">
+            <ul class="slider">
+              <li>
+                <article>
+                  <img src="./images/S_4_1.jpg" alt="Маски для обличчя" />
+                  <p>Маски для обличчя</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <img src="./images/S_4_2.jpg" alt="Ін'єкції для обличчя" />
+                  <p>Ін'єкції для обличчя</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <img src="./images/S_4_3.jpg" alt="Очищення обличчя" />
+                  <p>Очищення обличчя</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
       </section>
-      <section>
+      <section id="section_contact" class="s_5">
         <h1>Як нас <span>знайти</span></h1>
         <!-- MAP and Contact Form -->
       </section>
@@ -152,5 +185,6 @@
         <p>© 2022 Дані захищені</p>
       </address>
     </footer>
+    <script src="slider.js"></script>
   </body>
 </html>
