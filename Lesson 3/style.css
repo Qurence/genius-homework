@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary color */
+  --primary-white: #ffffff;
+  --primary-blue: #2b7fff;
+  --primary-dark-blue: #011c44;
+  /* Secondary color */
+  --secondary-grey-1: #4a4a4a;
+  --secondary-grey-3: #747272;
+  --secondary-navy: #011f4a;
+  --secondary-yellow: #ffd02b;
+}
+

@@ -5,12 +5,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Primary color */
+  --primary-white: #ffffff;
+  --primary-blue: #2b7fff;
+  --primary-dark-blue: #011c44;
+  /* Secondary color */
+  --secondary-grey-1: #4a4a4a;
+  --secondary-grey-2: #747272;
+  --secondary-navy: #011f4a;
+  --secondary-yellow: #ffd02b;
+}
+
 h1 {
   font-family: "Play", sans-serif;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white);
   font-family: Arial, sans-serif;
   margin: 0;
 }
@@ -21,7 +33,7 @@ p {
 
 span {
   font-weight: bold;
-  color: #2b7fff;
+  color: var(--primary-blue);
 }
 
 .logo {
@@ -29,7 +41,7 @@ span {
   width: 80px;
   height: auto;
   font-size: 22px;
-  color: #2b7fff;
+  color: var(--primary-blue);
 }
 
 a {
@@ -58,7 +70,7 @@ header {
 .nav-list li :focus {
   font-size: 16px;
   font-weight: 700;
-  color: #2b7fff;
+  color: var(--primary-blue);
 }
 
 .social-list {
@@ -79,7 +91,6 @@ header {
   left: 0;
   width: 100%;
   height: 80%;
-  /* object-fit: cover; */
   z-index: -1;
 }
 
@@ -96,15 +107,15 @@ header {
   font-size: 140px;
   font-weight: 700;
   font-family: "Play", sans-serif;
-  color: #2b7fff;
+  color: var(--primary-blue);
   margin-bottom: 20px;
   line-height: 120px;
 }
 
 .hero button {
-  background-color: #2b7fff;
+  background-color: var(--primary-blue);
   font-family: "Play", sans-serif;
-  color: white;
+  color: var(--primary-white);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -124,11 +135,10 @@ header {
 /* ---------------- */
 
 .s_2 {
-  margin-top: 400px;
+  margin-top: 200px;
+  /* margin-top: 400px; */
   display: flex;
-  /* justify-content: center; */
   width: 100%;
-  /* background-color: #2b7fff; */
   margin-bottom: 200px;
   padding-left: 10%;
 }
@@ -136,7 +146,6 @@ header {
 .s_2_l {
   width: 700px;
   margin-left: 10%;
-  /* background-color: beige; */
 }
 
 .s_2_l h1 {
@@ -159,7 +168,6 @@ header {
   width: 700px;
   margin-left: 5%;
   margin-top: -150px ;
-  /* background-color: beige; */
 }
 
 .img_star{
@@ -185,7 +193,8 @@ header {
 
 .backgroundS_3 {
     position: absolute;
-    top: 130vh;
+    top: 140vh;
+    /* top: 130vh;  */
     left: 0;
     width: 100%;
     height: 100%;
@@ -212,7 +221,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #ffffff;
+    background-color: var(--primary-white);
     border-radius: 18px;
     height: 180px;
     width: 400px;
@@ -250,13 +259,13 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center; /* Для центрирования точек */
+    text-align: center; 
   }
   
   /* Контейнер слайдера */
   .slider-container {
     width: 100%;
-    overflow: hidden; /* Оставляем, чтобы скрывать невидимые слайды */
+    overflow: hidden; 
   }
   
   /* Список слайдов */
@@ -300,7 +309,7 @@ header {
     transform: translateX(-50%);
     margin: 0;
     font-size: 18px;
-    color: #fff;
+    color: var(--primary-white);
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
@@ -333,23 +342,23 @@ header {
   
   /* Позиционирование стрелок */
   .prev {
-    left: -50px; /* Смещаем стрелку влево за пределы слайдера */
+    left: -50px;
   }
   
   .next {
-    right: -50px; /* Смещаем стрелку вправо за пределы слайдера */
+    right: -50px; 
   }
   
   /* Точки (индикаторы) */
   .dots {
     display: inline-block;
-    margin-top: 10px; /* Отступ сверху от слайдера */
+    margin-top: 10px; 
   }
   
   .dot {
     height: 10px;
     width: 10px;
-    background-color: #bbb;
+    background-color: var(--secondary-grey-2);
     border-radius: 50%;
     display: inline-block;
     margin: 0 5px;
@@ -357,5 +366,5 @@ header {
   }
   
   .dot.active {
-    background-color: #717171;
+    background-color: var(--secondary-grey-1);
   }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeWork-1</title>
+    <title>HomeWork</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,36 +14,34 @@
       </a>
       <nav>
         <ul class="nav-list">
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Чому ми</a></li>
-          <li><a href="#">Наші процедури</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#section_about">Про нас</a></li>
+          <li><a href="#section_why">Чому ми</a></li>
+          <li><a href="#section_procedures">Наші процедури</a></li>
+          <li><a href="#section_contact">Контакти</a></li>
         </ul>
       </nav>
       <article>
         <ul class="social-list">
           <li>
-            <a href="#"
-              ><img
-                src="./images/telephone-receiver_icon-icons.com_56033 1.svg"
-                alt="Tel"
-            /></a>
+            <a href="#">
+              <img src="./images/telephone-icon.svg" alt="Tel" />
+            </a>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/uit_facebook-f.svg" alt="Facebook"
-            /></a>
+            <a href="#">
+              <img src="./images/uit_facebook-f.svg" alt="Facebook" />
+            </a>
           </li>
           <li>
-            <a href=""
-              ><img src="./images/ph_instagram-logo-light.svg" alt="Instagram"
-            /></a>
+            <a href="#">
+              <img src="./images/instagram-logo.svg" alt="Instagram" />
+            </a>
           </li>
         </ul>
       </article>
     </header>
     <main>
-      <section class="hero">
+      <section id="section_hero" class="hero">
         <p>Косметологічна клініка</p>
         <h1>Beauty Zone</h1>
         <button type="button">Замовити дзвінок</button>
@@ -51,7 +49,7 @@
           Запишись та отримай безкоштовну консультацію нашого косметолога
         </p>
       </section>
-      <section class="s_2">
+      <section id="section_about" class="s_2">
         <div class="s_2_l">
           <h1>Перевтілюйтесь в <span>Beauty Zone!</span></h1>
           <p>
@@ -67,12 +65,12 @@
         </div>
         <div class="s_2_r">
           <img src="./images/изображ..jpg" alt="Img" />
-          <img src="./images/Star 1.png" alt="Star1" class="img_star star1" />
-          <img src="./images/Star 2.jpg" alt="Star2" class="img_star star2" />
-          <img src="./images/Star 3.jpg" alt="Star3" class="img_star star3" />
+          <img src="./images/Star_1.png" alt="Star1" class="img_star star1" />
+          <img src="./images/Star_2.jpg" alt="Star2" class="img_star star2" />
+          <img src="./images/Star_3.jpg" alt="Star3" class="img_star star3" />
         </div>
       </section>
-      <section class="s_3">
+      <section id="section_why" class="s_3">
         <img
           src="./images/background S3.jpg"
           alt="BackGround"
@@ -109,7 +107,7 @@
           </li>
         </ul>
       </section>
-      <section class="s_4">
+      <section id="section_procedures" class="s_4">
         <h1>Наші <span>процедури</span></h1>
         <div class="slider-wrapper">
           <div class="slider-container">
@@ -134,7 +132,6 @@
               </li>
             </ul>
           </div>
-          <!-- Стрелки и точки выносим за пределы .slider-container -->
           <button class="prev">❮</button>
           <button class="next">❯</button>
           <div class="dots">
@@ -144,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="section_contact" class="s_5">
         <h1>Як нас <span>знайти</span></h1>
         <!-- MAP and Contact Form -->
       </section>
