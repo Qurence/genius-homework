@@ -68,7 +68,7 @@ header {
   gap: 56px;
 }
 
-.nav-list li :focus {
+.nav-list li :hover {
   font-size: 16px;
   font-weight: 700;
   color: var(--primary-blue);
@@ -217,7 +217,7 @@ header {
     margin-top: 50px;
 }
 
-.s_3 ul li {
+.s_3 li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,13 +229,13 @@ header {
     box-shadow: inset 0 0 0 1px #ffffff, 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.s_3 ul li img {
+.s_3 li img {
     width: 50px;
     height: 50px;
     margin-top: 20px;
 }
 
-.s_3 ul li p {
+.s_3 p {
     font-size: 18px;
     margin-top: 20px;
 }
@@ -254,7 +254,7 @@ header {
 }
 
 
-/* Обертка для слайдера */
+/* Слайдер */
 .slider-wrapper {
     position: relative;
     width: 100%;
@@ -263,13 +263,11 @@ header {
     text-align: center; 
   }
   
-  /* Контейнер слайдера */
   .slider-container {
     width: 100%;
     overflow: hidden; 
   }
-  
-  /* Список слайдов */
+
   .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -277,16 +275,14 @@ header {
     padding: 0;
     margin: 0;
   }
-  
-  /* Каждый слайд */
+
   .slider li {
-    flex: 0 0 33.33%; /* Показываем 3 слайда одновременно */
+    flex: 0 0 33.33%; 
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
   }
   
-  /* Стили для article (слайда) */
   .slider article {
     position: relative;
     background: none;
@@ -294,7 +290,6 @@ header {
     padding: 0;
   }
   
-  /* Изображения */
   .slider img {
     width: 100%;
     height: auto;
@@ -302,7 +297,6 @@ header {
     display: block;
   }
   
-  /* Текст */
   .slider p {
     position: absolute;
     bottom: 20px;
@@ -317,7 +311,6 @@ header {
     white-space: nowrap;
   }
   
-  /* Навигационные стрелки */
   .prev,
   .next {
     position: absolute;
@@ -341,7 +334,6 @@ header {
     border-color: #717171;
   }
   
-  /* Позиционирование стрелок */
   .prev {
     left: -50px;
   }
@@ -350,7 +342,6 @@ header {
     right: -50px; 
   }
   
-  /* Точки (индикаторы) */
   .dots {
     display: inline-block;
     margin-top: 10px; 
@@ -369,3 +360,7 @@ header {
   .dot.active {
     background-color: var(--secondary-grey-1);
   }
+
+  /* ------------ */
+
+  
