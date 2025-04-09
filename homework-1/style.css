@@ -15,6 +15,7 @@
   --secondary-grey-2: #747272;
   --secondary-navy: #011f4a;
   --secondary-yellow: #ffd02b;
+  --index: calc(1vw + 1vh);
 }
 
 h1 {
@@ -135,8 +136,8 @@ header {
 /* ---------------- */
 
 .s_2 {
-  margin-top: 200px;
-  /* margin-top: 400px; */
+  /* margin-top: 200px; */
+  margin-top: calc(var(--index) * 6.5);
   display: flex;
   width: 100%;
   margin-bottom: 200px;
@@ -193,8 +194,8 @@ header {
 
 .backgroundS_3 {
     position: absolute;
-    top: 140vh;
-    /* top: 130vh;  */
+    /* top: 140vh; */
+    top: calc(var(--index) * 48); 
     left: 0;
     width: 100%;
     height: 100%;
