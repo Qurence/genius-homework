@@ -148,12 +148,17 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1744202814380!5m2!1sru!2sua"
             width="600" height="500" style="border: 0; border-radius: 32px;" allowfullscreen loading="lazy"></iframe>
         </div>
-        <form action="#" method="post" class="s_5_form">
-          <input type="text" id="name" name="name" required />
-          <input type="email" id="email" name="email" required />
-          <input type="tel" id="tel" name="tel" required />
-          <button type="submit">Відправити</button>
-        </form>
+        <div class="s_5_form">
+          <h2>Запишіться <span>безкоштовно</span>
+            та отримайте подарунок</h2>
+          <form action="#" method="post" class="s_5_form">
+            <input type="text" id="name" name="name" placeholder="Ваше ім'я та призвіще" required />
+            <input type="tel" id="tel" name="tel" placeholder="Ваш номер телефону" pattern="[0-9]{12}"
+              title="Введіть номер телефону" required />
+            <input type="email" id="email" name="email" placeholder="Ваша електронна пошта" required />
+            <button type="submit">Відправити</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
