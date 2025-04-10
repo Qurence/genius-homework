@@ -14,8 +14,9 @@
   /* Secondary color */
   --secondary-grey-1: #4a4a4a;
   --secondary-grey-2: #747272;
-  --secondary-navy: #011f4a;
+  --secondary-dark: #011f4a;
   --secondary-yellow: #ffd02b;
+  /* Adaptive index */
   --index: calc(1vw + 1vh);
 }
 
@@ -116,7 +117,7 @@ header {
 
 .hero button {
   background-color: var(--primary-blue);
-  font-family: "Play", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--primary-white);
   border: none;
   padding: 10px 20px;
@@ -172,23 +173,39 @@ header {
   margin-top: -150px;
 }
 
+.s_2_img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.img1 {
+  margin-top: 350px;
+  margin-left: 150px;
+}
+
+.img2 {
+  margin-left: -40px;
+}
+
 .img_star {
   position: absolute;
 }
 
 .star1 {
   margin-top: 350px;
-  margin-left: -400px;
+  margin-left: 50px;
 }
 
 .star2 {
   margin-top: 60px;
-  margin-left: -20px;
+  margin-left: 400px;
 }
 
 .star3 {
   margin-top: 300px;
-  margin-left: -40px;
+  margin-left: 350px;
 }
 
 /* ---------------- */
@@ -201,6 +218,10 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.s_3 {
+  margin-top: 400px;
 }
 
 .s_3 h1 {
@@ -291,10 +312,34 @@ header {
   padding: 0;
 }
 
-.slider img {
+/* Img slider */
+
+.image-container {
+  position: relative;
+  /* Устанавливаем позиционирование для контейнера */
+  display: inline-block;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(1, 28, 68, 1), transparent);
+  pointer-events: none;
+  border-radius: 5px;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 120px;
+}
+
+.slider img {
+  width: 350px;
   height: auto;
-  border-radius: 15px;
+  border-radius: 5px;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 120px;
   display: block;
 }
 
@@ -310,6 +355,7 @@ header {
   border-radius: 5px;
   text-align: center;
   white-space: nowrap;
+  z-index: 2;
 }
 
 .prev,
@@ -363,13 +409,14 @@ header {
 }
 
 /* ------------ */
-.s_5_title{
+.s_5_title {
   font-size: 50px;
   width: 400px;
   margin: 60px auto;
   text-align: center;
   margin-bottom: 50px;
 }
+
 .s_5_container {
   display: flex;
   justify-content: center;
@@ -381,3 +428,65 @@ header {
   border-radius: 50%;
 }
 
+.s_5_form {
+  width: 350px;
+  height: 500px;
+  background-color: var(--secondary-dark);
+  border-radius: 32px;
+  margin-left: 60px;
+}
+
+.s_5_form h2 {
+  font-size: 20px;
+  color: var(--primary-white);
+  margin: 50px auto;
+  width: 77%;
+  text-align: center;
+}
+
+.s_5 form {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: -100px auto;
+}
+
+.s_5 form input {
+  width: 80%;
+  height: 50px;
+  border-radius: 32px;
+  border: var(--secondary-grey-2) 1px solid;
+  background-color: transparent;
+  color: var(--primary-white);
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.s_5 form button{
+  background-color: var(--primary-blue);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-white);
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 32px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.s_5 form p{
+  font-size: 13px;
+  color: var(--secondary-grey-2);
+  margin-top: 20px;
+  text-align: center;
+  width: 68%;
+}
+
+.s_5 form p a{
+  text-decoration: underline;
+  font-weight: bold;
+}
