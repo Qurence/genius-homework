@@ -39,6 +39,8 @@ span {
   color: var(--primary-blue);
 }
 
+/* ------------- */
+
 .logo {
   font-family: "Play", sans-serif;
   width: 80px;
@@ -118,6 +120,7 @@ header {
 .hero button {
   background-color: var(--primary-blue);
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   color: var(--primary-white);
   border: none;
   padding: 10px 20px;
@@ -128,12 +131,20 @@ header {
   width: 200px;
 }
 
+.hero button:hover {
+  background-color: transparent;
+  color: black;
+  border: #2b7fff 1px solid;
+  transition: all 0.3s ease-in-out;
+}
+
 .under-button-text {
   font-size: 13px;
   width: 250px;
   margin-left: 10px;
   margin-top: 10px;
 }
+
 
 /* ---------------- */
 
@@ -472,6 +483,7 @@ header {
 .s_5 form button{
   background-color: var(--primary-blue);
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   color: var(--primary-white);
   border: none;
   padding: 10px 30px;
@@ -480,6 +492,13 @@ header {
   border-radius: 32px;
   height: 50px;
   margin-top: 10px;
+}
+
+.s_5 form button:hover{
+  background-color: transparent;
+  /* color: var(--primary-blue); */
+  border: #2b7fff 1px solid;
+  transition: all 0.3s ease-in-out;
 }
 
 .s_5 form p{
