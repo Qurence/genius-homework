@@ -110,8 +110,8 @@ header {
 }
 
 .container-hero{
-  margin-top: 70px;
-  margin-left: 500px;
+  margin-top: 50px;
+  margin-left: 350px;
   height: 408px;
   width: 529px;
 }
@@ -157,7 +157,6 @@ header {
 /* ---------------- */
 
 .s_2 {
-  /* margin-top: 200px; */
   margin-top: calc(var(--index) * 1.5);
   display: flex;
   width: 100%;
