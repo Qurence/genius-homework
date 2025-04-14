@@ -30,6 +30,10 @@ body {
   margin: 0;
 }
 
+.section {
+  padding: 48px 0;
+}
+
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -102,6 +106,10 @@ header {
 }
 
 .hero {
+  height: 700px;
+}
+
+.container-hero{
   margin-top: 100px;
   margin-left: 500px;
   height: 408px;
