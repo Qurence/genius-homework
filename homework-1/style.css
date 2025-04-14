@@ -106,11 +106,11 @@ header {
 }
 
 .hero {
-  height: 700px;
+  height: 680px;
 }
 
 .container-hero{
-  margin-top: 100px;
+  margin-top: 70px;
   margin-left: 500px;
   height: 408px;
   width: 529px;
@@ -158,10 +158,9 @@ header {
 
 .s_2 {
   /* margin-top: 200px; */
-  margin-top: calc(var(--index) * 6.5);
+  margin-top: calc(var(--index) * 1.5);
   display: flex;
   width: 100%;
-  margin-bottom: 200px;
   padding-left: 10%;
 }
 
@@ -240,7 +239,7 @@ header {
 }
 
 .s_3 {
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 .s_3 h1 {
@@ -282,9 +281,6 @@ header {
 }
 
 /* ---------------- */
-.s_4 {
-  margin-top: 100px;
-}
 
 .s_4 h1 {
   font-size: 50px;
