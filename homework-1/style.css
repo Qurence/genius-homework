@@ -90,6 +90,8 @@ header {
   transition: all 0.1s ease-in-out;
 }
 
+/* ----------------- */
+
 .background {
   position: absolute;
   top: 0;
@@ -98,8 +100,6 @@ header {
   height: 80%;
   z-index: -1;
 }
-
-/* ----------------- */
 
 .hero {
   margin-top: 100px;
@@ -341,7 +341,6 @@ header {
   background: linear-gradient(to top, rgba(1, 28, 68, 1), transparent);
   pointer-events: none;
   border-radius: 5px;
-  border-top-right-radius: 120px;
   border-bottom-left-radius: 120px;
 }
 
