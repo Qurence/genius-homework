@@ -1,14 +1,28 @@
-.box{
-    display: inline-block;
+* {
     box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+}
+
+.item {
     width: 100px;
     height: 100px;
     background-color: burlywood;
     padding: 10px;
     border: 6px solid darkred;
     margin: 10px;
+    /*  */
+    /* flex-basis: 100px; */
 }
 
-.box:nth-child(4n + 4) {
+.item:nth-child(2) {
     background-color: lightblue;
+    align-self: flex-end;
 }
+

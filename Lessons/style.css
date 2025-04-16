@@ -31,13 +31,14 @@ address {
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 /* Container Добавить в дз !!!!!!!! */
-.container{
+.container {
   width: 100%;
   padding: 0 24px;
-  max-width: 1288px; 
+  max-width: 1288px;
   margin: 0 auto;
 }
 
@@ -75,15 +76,42 @@ ul {
 .link:hover {
   color: var(--primary-green);
   text-decoration: underline;
-  font-weight: 600;
+  /* font-weight: 600; */
+}
+
+/* Header section */
+.header {
+  background-color: lightgray;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 /* Hero section */
 .hero-section {
   padding: 272px 0;
 }
+
 .hero-title {
-  margin-bottom: 0;
   color: var(--primary-white);
   font-size: 128px;
   text-align: center;
@@ -95,15 +123,22 @@ ul {
 }
 
 /* Advantages section */
+.advantages-section {
+  padding: 16px 0;
+  background-color: var(--primary-green);
+}
 
 .advantages-list {
-  background-color: var(--primary-green);
-  color: var(--primary-white);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .advantages-item {
+  color: var(--primary-white);
   font-style: 20px;
   font-weight: 300;
+  margin: 0;
 }
 
 .section-title {
@@ -117,6 +152,11 @@ ul {
 }
 
 /* Traditions section */
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
 
 .traditions-section {
   padding-top: 96px;
@@ -135,9 +175,17 @@ ul {
   text-transform: uppercase;
 }
 
+.traditions-content {
+  max-width: 710px;
+}
+
+.traditions-text.limited {
+  max-width: 330px;
+}
+
 /* Chef section */
 
-.chefs-title{
+.chefs-title {
   margin-bottom: 80px;
 }
 
@@ -148,7 +196,23 @@ ul {
 }
 
 /* Formats section */
-.formats-title{
+.formats-list{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.format-card{
+  padding: 24px;
+  border: 1px solid lightgray; /* Remove */
+  border-radius: 16px;
+}
+
+.formats-item{
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.formats-title {
   margin-bottom: 80px;
 }
 
