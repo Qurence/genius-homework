@@ -50,6 +50,14 @@ span {
   color: var(--primary-blue);
 }
 
+.section-title {
+  font-size: 50px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
 /* ------------- */
 
 .logo {
@@ -91,7 +99,7 @@ header {
   font-size: 16px;
   /* font-weight: 700; */
   color: var(--primary-blue);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .social-list {
@@ -100,7 +108,7 @@ header {
   gap: 32px;
 }
 
-/* ----------------- */
+/* Section Hero  */
 
 .background {
   position: absolute;
@@ -126,7 +134,7 @@ header {
   width: 529px;
 }
 
-.hero h1 {
+.hero-title {
   font-size: calc(var(--index) * 4.8);
   font-weight: 700;
   font-family: "Play", sans-serif;
@@ -135,7 +143,7 @@ header {
   line-height: 120px;
 }
 
-.hero button {
+.hero-button {
   background-color: var(--primary-blue);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -149,7 +157,7 @@ header {
   width: 200px;
 }
 
-.hero button:hover {
+.hero-button:hover {
   background-color: transparent;
   color: black;
   border: var(--primary-blue) 1px solid;
@@ -163,36 +171,36 @@ header {
   margin-top: 10px;
 }
 
-/* ---------------- */
+/* Section About */
 
-.s_2 {
+.section-about {
   margin-top: calc(var(--index) * 1.5);
   display: flex;
   width: 100%;
   gap: 40px;
 }
 
-.s_2_l {
+.section-about-text {
   width: 1200px;
 }
 
-.s_2_l h1 {
+.text-title {
   font-size: 50px;
   width: 400px;
 }
 
-.s_2_l p {
+.text-paragraph {
   font-size: 18px;
   margin-top: 20px;
   line-height: 30px;
 }
 
-.s_2_l p span {
+.section-about-text p span {
   font-weight: bold;
   color: black;
 }
 
-.s_2_r {
+.section-about-img {
   width: 700px;
   /* margin-left: 20%; */
   margin-top: -150px;
@@ -221,21 +229,25 @@ header {
 .star1 {
   margin-top: 350px;
   margin-left: 50px;
+  fill: var(--primary-dark-blue);
 }
 
 .star2 {
   margin-top: 60px;
   margin-left: 400px;
+  fill: var(--primary-blue);
+
 }
 
 .star3 {
   margin-top: 300px;
   margin-left: 350px;
+  fill: var(--secondary-grey-2);
 }
 
-/* ---------------- */
+/* Section why  */
 
-.backgroundS_3 {
+.why-background {
   position: absolute;
   /* top: 140vh; */
   top: calc(var(--index) * 50);
@@ -245,26 +257,18 @@ header {
   z-index: -1;
 }
 
-.s_3 {
+.section-why {
   margin-top: 200px;
 }
 
-.s_3 h1 {
-  font-size: 50px;
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.s_3 ul {
+.why-list {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 100px;
-  margin-top: 50px;
 }
 
-.s_3 li {
+.why-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,27 +280,19 @@ header {
   box-shadow: inset 0 0 0 1px #ffffff, 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.s_3 li img, svg{
+.section-why li img, .section-why li svg{
   width: 50px;
   height: 50px;
   margin-top: 20px;
   fill: var(--primary-blue);
 }
 
-.s_3 p {
+.section-why p {
   font-size: 18px;
   margin-top: 20px;
 }
 
-/* ---------------- */
-
-.s_4 h1 {
-  font-size: 50px;
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 50px;
-}
+/* Section procedures */
 
 /* Слайдер */
 .slider-wrapper {
@@ -305,6 +301,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  /* padding-top: 40px; */
 }
 
 .slider-container {
@@ -387,19 +384,23 @@ header {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #ccc;
+  border: 1px solid var(--secondary-grey-1);
   color: #333;
   font-size: 20px;
   line-height: 40px;
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
+  background-color: var(--primary-white);
   transition: border-color 0.3s ease;
 }
 
 .prev:hover,
 .next:hover {
   border-color: #717171;
+  background-color: var(--primary-blue);
+  fill: var(--primary-white);
+  transition: all 0.2s ease-in-out;
 }
 
 .prev {
@@ -408,7 +409,12 @@ header {
 
 .next {
   right: -50px;
+} 
+
+.next .carousel-arrow { 
+  transform: scaleX(-1)
 }
+
 
 .dots {
   display: inline-block;
@@ -429,31 +435,25 @@ header {
   background-color: var(--secondary-grey-1);
 }
 
-/* ------------ */
+/* Section Contact */
 
-.s_5 {
+.section-contact {
   padding-bottom: 96px;
 }
 
-.s_5_title {
-  font-size: 50px;
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
 
-.s_5_container {
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 
-.s_5_map {
+.contact-map {
   border-radius: 50%;
 }
 
-.s_5_form {
+.contact-form {
   width: 350px;
   height: 500px;
   background-color: var(--secondary-dark);
@@ -462,7 +462,7 @@ header {
   position: relative;
 }
 
-.s_5_form h2 {
+.form-text {
   font-size: 20px;
   color: var(--primary-white);
   margin: 50px auto;
@@ -471,7 +471,7 @@ header {
   position: relative;
 }
 
-.s_5 form {
+.section-contact form {
   display: flex;
   background-color: transparent;
   flex-direction: column;
@@ -481,7 +481,7 @@ header {
   margin: -100px auto;
 }
 
-.s_5 form input {
+.section-contact form input {
   width: 80%;
   height: 50px;
   border-radius: 32px;
@@ -492,7 +492,17 @@ header {
   margin-bottom: 20px;
 }
 
-.s_5 form button {
+.section-contact form input:focus {
+  background-color: var(--secondary-grey-2);
+  transition: all 0.3s ease-in-out;
+}
+
+form input::placeholder {
+  color: var(--primary-white); 
+  opacity: 0.85;
+}
+
+.section-contact form button {
   background-color: var(--primary-blue);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -506,13 +516,13 @@ header {
   margin-top: 10px;
 }
 
-.s_5 form button:hover {
+.section-contact form button:hover {
   background-color: transparent;
-  border: #2b7fff 1px solid;
+  border: var(--primary-blue) 1px solid;
   transition: all 0.3s ease-in-out;
 }
 
-.s_5 form p {
+.section-contact form p {
   font-size: 13px;
   color: var(--secondary-grey-2);
   margin-top: 20px;
@@ -520,7 +530,7 @@ header {
   width: 68%;
 }
 
-.s_5 form p a {
+.section-contact form p a {
   text-decoration: underline;
   font-weight: bold;
 }
@@ -568,11 +578,11 @@ footer {
   gap: 20px;
 }
 
-.address-list-item {
+.address-list-item a{
   cursor: pointer;
 }
 
-.address-list-item:hover {
+.address-list-item a:hover {
   color: var(--primary-blue);
   text-decoration: underline;
 }
@@ -588,7 +598,7 @@ footer {
   line-height: 30px;
 }
 
-.footer-menu li:hover {
+.footer-menu a:hover {
   color: var(--primary-blue);
   text-decoration: underline;
 }

@@ -62,8 +62,8 @@
               class="background"
             />  -->
           <p>Косметологічна клініка</p>
-          <h1>Beauty Zone</h1>
-          <button type="button">Замовити дзвінок</button>
+          <h1 class="hero-title">Beauty Zone</h1>
+          <button class="hero-button" type="button">Замовити дзвінок</button>
           <p class="under-button-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -71,36 +71,44 @@
       </div>
     </section>
     <section id="section_about" class="section">
-      <div class="container s_2">
-        <div class="s_2_l">
-          <h1>Перевтілюйтесь в <span>Beauty Zone!</span></h1>
-          <p>
+      <div class="container section-about">
+        <div class="section-about-text">
+          <h1 class="text-title" >Перевтілюйтесь в <span>Beauty Zone!</span></h1>
+          <p class="text-paragraph">
             Наша косметологічна клініка пропонує вам професійні послуги з
             догляду за шкірою обличчя та тіла.
           </p>
-          <p>
+          <p class="text-paragraph">
             B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти якості
             та приємний сервіс. Наші косметологічні процедури та препарати
             допоможуть вам підтримувати свою красу та молодість. <br />
             З нами краса назавжди!
           </p>
         </div>
-        <div class="s_2_r">
-          <!-- <img src="./images/изображ..jpg" alt="Img" /> -->
+        <div class="section-about-img">
           <img src="./images/s_2_img1.jpg" alt="Дівчина до процедур" class="s_2_img img1" />
           <img src="./images/s_2_img2.jpg" alt="Дівчина після процедур" class="s_2_img img2" />
-          <img src="./images/Star_1.png" alt="Star1" class="img_star star1" />
-          <img src="./images/Star_2.jpg" alt="Star2" class="img_star star2" />
-          <img src="./images/Star_3.jpg" alt="Star3" class="img_star star3" />
+          <!-- <img src="./images/Star_1.png" alt="Star1" class="img_star star1" /> -->
+          <svg class="img_star star1" width="64" height="64">
+            <use xlink:href="./images/sprite.svg#icon-Star-1"></use>
+          </svg>
+          <!-- <img src="./images/Star_2.jpg" alt="Star2" class="img_star star2" /> -->
+          <svg class="img_star star2" width="40" height="40">
+            <use xlink:href="./images/sprite.svg#icon-Star-2"></use>
+          </svg>
+          <!-- <img src="./images/Star_3.jpg" alt="Star3" class="img_star star3" /> -->
+          <svg class="img_star star3" width="16" height="16">
+            <use xlink:href="./images/sprite.svg#icon-Star-2"></use>
+          </svg>
         </div>
       </div>
     </section>
     <section id="section_why" class="section">
-      <div class="container s_3">
-        <img src="./images/background_S3_x1_5.jpg" alt="BackGround" class="backgroundS_3" />
-        <h1>Чому люди <span>обирають нас</span></h1>
-        <ul>
-          <li>
+      <div class="container section-why">
+        <img class="why-background" src="./images/background_S3_x1_5.jpg" alt="BackGround" />
+        <h1 class="section-title">Чому люди <span>обирають нас</span></h1>
+        <ul class="why-list">
+          <li class="why-list-item">
             <article>
               <!-- <img src="./images/S_3_1.svg" alt="1" /> -->
               <svg width="32" height="32">
@@ -112,7 +120,7 @@
               </p>
             </article>
           </li>
-          <li>
+          <li class="why-list-item">
             <article>
               <!-- <img src="./images/S_3_2.svg" alt="2" /> -->
               <svg width="32" height="32">
@@ -124,7 +132,7 @@
               </p>
             </article>
           </li>
-          <li>
+          <li class="why-list-item">
             <article>
               <!-- <img src="./images/S_3_3.svg" alt="3" /> -->
               <svg width="32" height="32">
@@ -139,9 +147,9 @@
         </ul>
       </div>
     </section>
-    <section id="section_procedures" class="s_4 section">
+    <section id="section_procedures" class="section">
       <div class="container">
-        <h1>Наші <span>процедури</span></h1>
+        <h1 class="section-title">Наші <span>процедури</span></h1>
         <div class="slider-wrapper">
           <div class="slider-container">
             <ul class="slider">
@@ -165,8 +173,18 @@
               </li>
             </ul>
           </div>
-          <button class="prev">❮</button>
-          <button class="next">❯</button>
+          <!-- <button class="prev">❮</button> -->
+          <!-- <button class="next">❯</button> -->
+          <button class="next">
+            <svg class="carousel-arrow" width="16" height="16">
+              <use xlink:href="./images/sprite.svg#icon-Arrow"></use>
+            </svg>
+           </button>
+           <button class="prev">
+            <svg class="carousel-arrow" width="16" height="16">
+              <use xlink:href="./images/sprite.svg#icon-Arrow"></use>
+            </svg>
+           </button>
           <div class="dots">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -175,22 +193,22 @@
         </div>
       </div>
     </section>
-    <section id="section_contact" class="s_5 section">
+    <section id="section_contact" class="section-contact section">
       <div class="container">
-        <h1 class="s_5_title">Як нас <span>знайти</span></h1>
+        <h1 class="section-title">Як нас <span>знайти</span></h1>
         <!-- MAP and Contact Form -->
-        <div class="s_5_container">
-          <div class="s_5_map">
+        <div class="contact-container">
+          <div class="contact-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1744202814380!5m2!1sru!2sua"
               width="600" height="500" style="border: 0; border-radius: 32px" allowfullscreen loading="lazy"></iframe>
           </div>
-          <div class="s_5_form">
+          <div class="contact-form">
             <img class="background_form" src="./images/background_form.png" alt="Линии" />
-            <h2>
+            <h2 class="form-text">
               Запишіться <span>безкоштовно</span> та отримайте подарунок
             </h2>
-            <form action="#" method="post" class="s_5_form">
+            <form action="#" method="post" class="contact-form">
               <input type="text" id="name" name="name" placeholder="Ваше ім'я та призвіще" required />
               <input type="tel" id="tel" name="tel" placeholder="Ваш номер телефону" pattern="[0-9]{12}"
                 title="Введіть номер телефону" required />
