@@ -84,9 +84,11 @@
               <img class="chef-photo" src="./images/chef_img_nastya.jpg" alt="Nastya chef" />
               <div>
                 <h3 class="chef-title">Настя</h3>
-                <p class="chef-text">Привіт, я Настя!</p>
-                <p class="chef-text">Вже 10 років, я втілюю <br /> у життя цікаві та смачні ідеї.</p>
-                <p class="chef-text">Я випічу для вас найсмачніщі вироби!</p>
+                <div class="chef-text">
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я втілюю <br /> у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                </div>
               </div>
             </article>
           </li>
@@ -179,51 +181,56 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
-      <a href="#">
-        <img src="./images/logo.svg" alt="Logo" />
-      </a>
-      <nav>
-        <ul>
-          <li><a class="link" href="#">Франшиза</a></li>
-          <li><a class="link" href="#">Наші традиції</a></li>
-          <li><a class="link" href="#">Формати</a></li>
-          <li><a class="link" href="#">Контакти</a></li>
-        </ul>
-      </nav>
-      <address class="adress-link">
-        <ul>
-          <li>
-            <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
-          </li>
-          <li>
-            <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-          </li>
-          <li>
-            <a class="address-link" href="https://maps.app.goo.gl/DWySY44Mtz8j7h5t7" target="_blank">
-              Україна, м. Київ, вул. Січових Стрільців 54</a>
-          </li>
-          <li>
+      <div class="footer-container">
+        <nav class="footer-nav">
+          <div class="footer-logo">
             <a href="#">
-              <!-- facebook logo -->
-              <svg class="address-social" width="32" height="32">
-                <use xlink:href="./images/sprite.svg#icon-facebook_icon"></use>
-              </svg>
+              <img src="./images/logo.svg" alt="Logo" />
             </a>
-          </li>
-          <li>
-            <a href="#">
-              <!-- instagram logo -->
-              <svg class="address-social" width="32" height="32">
-                <use xlink:href="./images/sprite.svg#icon-instagram_icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <a class="address-link" href="#">Політика конфіденсійності</a>
-        <p class="address-copyright">© 2022 Дані захищені</p>
-      </address>
+          </div>
+          <ul class="footer-menu">
+            <li><a class="link" href="#">Франшиза</a></li>
+            <li><a class="link" href="#">Наші традиції</a></li>
+            <li><a class="link" href="#">Формати</a></li>
+            <li><a class="link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <address class="footer-address">
+          <ul class="address-list">
+            <li>
+              <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+            </li>
+            <li>
+              <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            </li>
+            <li>
+              <a class="address-link" href="https://maps.app.goo.gl/DWySY44Mtz8j7h5t7" target="_blank">
+                Україна, м. Київ, вул. Січових Стрільців 54</a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-social" width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#icon-facebook_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-social" width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#icon-instagram_icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="address-info">
+            <a class="address-link" href="#">Політика конфіденсійності</a>
+            <p class="address-copyright">© 2022 Дані захищені</p>
+          </div>
+        </address>
+      </div>
     </div>
   </footer>
 </body>
