@@ -258,7 +258,23 @@ header {
 }
 
 .section-why {
-  margin-top: 200px;
+  margin-top: 250px;
+}
+
+.section-why-container{
+  position: relative;
+}
+
+.section-why-container::before {
+  content: "";
+  /* top: 0; */
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  background-image: url(./images/background_S3_x1_5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .why-list {
