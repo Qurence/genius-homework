@@ -63,7 +63,7 @@
             />  -->
           <p>Косметологічна клініка</p>
           <h1 class="hero-title">Beauty Zone</h1>
-          <button class="hero-button" type="button">Замовити дзвінок</button>
+          <button class="hero-button modal-btn-open" type="button">Замовити дзвінок</button>
           <p class="under-button-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -73,7 +73,7 @@
     <section id="section_about" class="section">
       <div class="container section-about">
         <div class="section-about-text">
-          <h1 class="text-title" >Перевтілюйтесь в <span>Beauty Zone!</span></h1>
+          <h1 class="text-title">Перевтілюйтесь в <span>Beauty Zone!</span></h1>
           <p class="text-paragraph">
             Наша косметологічна клініка пропонує вам професійні послуги з
             догляду за шкірою обличчя та тіла.
@@ -179,12 +179,12 @@
             <svg class="carousel-arrow" width="16" height="16">
               <use xlink:href="./images/sprite.svg#icon-Arrow"></use>
             </svg>
-           </button>
-           <button class="prev">
+          </button>
+          <button class="prev">
             <svg class="carousel-arrow" width="16" height="16">
               <use xlink:href="./images/sprite.svg#icon-Arrow"></use>
             </svg>
-           </button>
+          </button>
           <div class="dots">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -288,6 +288,14 @@
     <img class="background-footer" src="./images/background_footer.png" alt="background-footer" />
     <img class="background-img" src="./images/img_footer.png" alt="img-footer" />
   </footer>
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">close</button>
+      
+    </div>
+  </div>
+
+  <script src="./js/modal.js" type="module"></script>
   <script src="slider.js"></script>
 </body>
 

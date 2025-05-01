@@ -654,3 +654,51 @@ footer {
 .footer_social_img:hover {
   fill: var(--primary-blue);
 }
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(116, 114, 114, 0.5);
+  /* background-color: var(--secondary-grey-2); */
+  padding: 20px 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.backdrop.is-hidden {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  background-color: var(--primary-dark-blue);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-btn-close{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+/* Contact Form Modal */
+
+
