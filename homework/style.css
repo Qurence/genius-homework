@@ -225,25 +225,33 @@ header {
 
 .img_star {
   position: absolute;
+  transition: fill 0.3s ease-in-out;
 }
 
 .star1 {
   margin-top: 350px;
   margin-left: 50px;
   fill: var(--primary-dark-blue);
+  animation: rotate 10s linear infinite;
 }
 
 .star2 {
   margin-top: 60px;
   margin-left: 400px;
   fill: var(--primary-blue);
-
+  animation: rotate 7s linear infinite;
 }
 
 .star3 {
   margin-top: 300px;
   margin-left: 350px;
   fill: var(--secondary-grey-2);
+  animation: rotate 5s linear infinite;
+}
+
+.img_star:hover{
+  /* animation: rotate 20s linear infinite; */
+  fill: var(--secondary-yellow);
 }
 
 /* Section why  */
@@ -505,11 +513,12 @@ header {
   color: var(--primary-white);
   padding-left: 20px;
   margin-bottom: 20px;
+  transition: background-color 0.2s ease-in-out;
+
 }
 
 .form input:focus {
   background-color: var(--secondary-grey-2);
-  transition: all 0.3s ease-in-out;
 }
 
 .form input::placeholder {
@@ -529,12 +538,12 @@ header {
   border-radius: 32px;
   height: 50px;
   margin-top: 10px;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .form button:hover {
   background-color: transparent;
   border: var(--primary-blue) 1px solid;
-  transition: all 0.3s ease-in-out;
 }
 
 .form p {
@@ -595,6 +604,7 @@ footer {
 
 .address-list-item a {
   cursor: pointer;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
 .address-list-item a:hover {
@@ -613,6 +623,10 @@ footer {
   line-height: 30px;
 }
 
+.footer-menu a {
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
 .footer-menu a:hover {
   color: var(--primary-blue);
   text-decoration: underline;
@@ -620,6 +634,10 @@ footer {
 
 .privacy-policy p {
   padding-top: 10px;
+}
+
+.privacy-policy a{
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
 .privacy-policy a:hover {
@@ -704,6 +722,12 @@ footer {
   border: none;
   font-weight: 900;
   font-size: 26px;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.modal-btn-close:hover {
+  color: var(--secondary-yellow);
+  transform: scale(1.2);
 }
 
 /* Contact Form Modal */
@@ -742,4 +766,19 @@ footer {
   height: 100%;
   border-radius: 32px;
   filter: invert(0.3%);
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg; 
+    scale: 1;
+  }
+  50% {
+    rotate: 180deg;
+    scale: 1.7;
+  }
+  100% {
+    rotate: 360deg;
+    scale: 1;
+  }
 }
