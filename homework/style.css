@@ -161,7 +161,7 @@ header {
   background-color: transparent;
   color: black;
   border: var(--primary-blue) 1px solid;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .under-button-text {
@@ -225,7 +225,7 @@ header {
 
 .img_star {
   position: absolute;
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.2s ease-in-out;
 }
 
 .star1 {
@@ -415,7 +415,7 @@ header {
   cursor: pointer;
   border-radius: 50%;
   background-color: var(--primary-white);
-  transition: border-color 0.3s ease;
+  transition: border-color 0.2s ease;
 }
 
 .prev:hover,
@@ -667,6 +667,7 @@ footer {
 
 .footer_social_img {
   fill: var(--primary-white);
+  transition: fill 0.2s ease-in-out;
 }
 
 .footer_social_img:hover {
@@ -687,7 +688,7 @@ footer {
   background-color: rgba(116, 114, 114, 0.5);
   /* background-color: var(--secondary-grey-2); */
   padding: 20px 0;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .backdrop.is-hidden {
