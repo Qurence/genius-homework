@@ -76,9 +76,15 @@ ul {
 }
 
 .button:hover {
+  color: var(--color-brand-dark);
   background-color: transparent;
-  color: var(--color-brand-normal);
-  border: 2px solid var(--color-brand-normal);
+}
+
+.button:disabled {
+  color: gray;
+  background-color: lightgray;
+  border-color: currentColor;
+  cursor: not-allowed;
 }
 
 .link {
@@ -527,6 +533,14 @@ ul {
   background-color: transparent;
 }
 
+.form-input:disabled{
+  border-color: lightgray;
+}
+
+.form-input:disabled::placeholder{
+  color: lightgray;
+}
+
 .form-input:focus {
   border-color: var(--color-secondary-dark);
   outline: none;
@@ -561,3 +575,38 @@ ul {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
 }
+
+/* Checkbox Terms */
+
+/* .checkbox{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.checkbox-input{
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
+}
+
+.checkbox-label{
+  padding-left: 24px;
+}
+
+.checkbox-label::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  margin-left: 110px;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 4px;
+  content: '';
+} */
