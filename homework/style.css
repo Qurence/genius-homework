@@ -30,6 +30,10 @@ body {
   margin: 0;
 }
 
+.body-no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding: 48px 0;
 }
@@ -710,6 +714,7 @@ footer {
   padding: 20px 0;
   transition: opacity 0.2s ease-in-out, visibility 0.3s ease-in-out;
 }
+
 
 .backdrop.is-hidden {
   /* display: none; */
