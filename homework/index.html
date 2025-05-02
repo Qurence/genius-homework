@@ -208,11 +208,21 @@
             <h2 class="form-text">
               Запишіться <span>безкоштовно</span> та отримайте подарунок
             </h2>
-            <form action="#" method="post" class="contact-form form">
-              <input type="text" id="name" name="name" placeholder="Ваше ім'я та призвіще" required />
-              <input type="tel" id="tel" name="tel" placeholder="Ваш номер телефону" pattern="[0-9]{12}"
+            <form name="contact-form" method="post" class="contact-form form" autocomplete="off">
+              <div class="form-field">
+                <label for="name"></label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Ваше ім'я та призвіще" required />
+              </div>
+              <div class="form-field">
+                <label for="tel"></label>
+                <input class="form-input" type="tel" id="tel" name="tel" placeholder="Ваш номер телефону" pattern="[0-9]{12}"
                 title="Введіть номер телефону" required />
-              <input type="email" id="email" name="email" placeholder="Ваша електронна пошта" required />
+              </div>
+              <div class="form-field">
+                <label for="email"></label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="Ваша електронна пошта" required />
+
+              </div>
               <button type="submit">Записатись безкоштовно</button>
               <p>
                 Натискаючи на кнопку я погоджуюсь з
@@ -291,17 +301,27 @@
   <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal-btn-close" type="button">X</button>
-      <div class="contact-form-modal">
-        <h1 class="modal-text">Замовити дзвінок</h1>
-        <img class="background_form-modal" src="./images/background_form.png" alt="Линии" />
-        <h2 class="form-text-modal">
+      <h1 class="modal-text">Замовити дзвінок</h1>
+      <div class="">
+        <img class="background_form background_form-modal" src="./images/background_form.png" alt="Линии" />
+        <h2 class="form-text modal-form-text">
           Запишіться <span>безкоштовно</span> та отримайте подарунок
         </h2>
-        <form action="#" method="post" class="contact-form form">
-          <input class="modal-input-form" type="text" id="name" name="name" placeholder="Ваше ім'я та призвіще" required />
-          <input class="modal-input-form" type="tel" id="tel" name="tel" placeholder="Ваш номер телефону" pattern="[0-9]{12}"
+        <form name="modal-form" method="post" class="contact-form form" autocomplete="off">
+          <div class="form-field">
+            <label for="name"></label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Ваше ім'я та призвіще" required />
+          </div>
+          <div class="form-field">
+            <label for="tel"></label>
+            <input class="form-input" type="tel" id="tel" name="tel" placeholder="Ваш номер телефону" pattern="[0-9]{12}"
             title="Введіть номер телефону" required />
-          <input class="modal-input-form" type="email" id="email" name="email" placeholder="Ваша електронна пошта" required />
+          </div>
+          <div class="form-field">
+            <label for="email"></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="Ваша електронна пошта" required />
+
+          </div>
           <button type="submit">Записатись безкоштовно</button>
           <p>
             Натискаючи на кнопку я погоджуюсь з
@@ -313,7 +333,7 @@
   </div>
 
   <script src="./js/modal.js" type="module"></script>
-  <script src="slider.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
