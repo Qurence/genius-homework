@@ -10,45 +10,47 @@
 
   <body>
     <header>
-      <a href="#">
-        <p lang="en" class="logo">Beauty Zone</p>
-      </a>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#section_about">Про нас</a></li>
-          <li><a href="#section_why">Чому ми</a></li>
-          <li><a href="#section_procedures">Наші процедури</a></li>
-          <li><a href="#section_contact">Контакти</a></li>
-        </ul>
-      </nav>
-      <article>
-        <ul class="social-list">
-          <li>
-            <a href="#">
-              <!-- <img src="./images/telephone-icon.svg" alt="Tel" /> -->
-              <svg width="32" height="32">
-                <use xlink:href="./images/sprite.svg#tel-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <!-- <img src="./images/uit_facebook-f.svg" alt="Facebook" /> -->
-              <svg width="32" height="32">
-                <use xlink:href="./images/sprite.svg#facebook-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <!-- <img src="./images/instagram-logo.svg" alt="Instagram" /> -->
-              <svg width="32" height="32">
-                <use xlink:href="./images/sprite.svg#insta-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </article>
+      <div class="container header-container">
+        <a href="#">
+          <p lang="en" class="logo">Beauty Zone</p>
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#section_about">Про нас</a></li>
+            <li><a href="#section_why">Чому ми</a></li>
+            <li><a href="#section_procedures">Наші процедури</a></li>
+            <li><a href="#section_contact">Контакти</a></li>
+          </ul>
+        </nav>
+        <article>
+          <ul class="social-list">
+            <li>
+              <a href="#">
+                <!-- <img src="./images/telephone-icon.svg" alt="Tel" /> -->
+                <svg width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#tel-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- <img src="./images/uit_facebook-f.svg" alt="Facebook" /> -->
+                <svg width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- <img src="./images/instagram-logo.svg" alt="Instagram" /> -->
+                <svg width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#insta-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
     </header>
     <main>
       <section id="section_hero" class="hero section">
@@ -289,70 +291,72 @@
       </section>
     </main>
     <footer>
-      <nav class="footer-nav">
-        <div class="footer-logo">
-          <a href="#">
-            <p lang="en" class="logo">Beauty Zone</p>
-          </a>
-        </div>
-        <ul class="footer-menu">
-          <li><a href="#section_about">Про нас</a></li>
-          <li><a href="#section_why">Чому ми</a></li>
-          <li><a href="#section_procedures">Наші процедури</a></li>
-          <li><a href="#section_contact">Контакти</a></li>
-        </ul>
-      </nav>
-      <address class="footer-address">
-        <div class="address-container">
-          <ul class="address-list">
-            <li class="address-list-item">
-              <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
-            </li>
-            <li class="address-list-item">
-              <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-            </li>
-            <li class="address-list-item">
-              <a
-                href="https://maps.app.goo.gl/QbYPqjsE1LUxApm9A"
-                target="_blank"
-              >
-                Україна, м. Київ, вул. <br />
-                Тараса Шевченка 5</a
-              >
-            </li>
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          <div class="footer-logo">
+            <a href="#">
+              <p lang="en" class="logo">Beauty Zone</p>
+            </a>
+          </div>
+          <ul class="footer-menu">
+            <li><a href="#section_about">Про нас</a></li>
+            <li><a href="#section_why">Чому ми</a></li>
+            <li><a href="#section_procedures">Наші процедури</a></li>
+            <li><a href="#section_contact">Контакти</a></li>
           </ul>
-          <ul class="footer-list">
-            <li>
-              <a href="#">
-                <!-- <img class="footer_social_img" src="./images/tel-logo-footer.svg" alt="Tel" /> -->
-                <svg class="footer_social_img" width="32" height="32">
-                  <use xlink:href="./images/sprite.svg#tel-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- <img class="footer_social_img" src="./images/facebook-logo-footer.svg" alt="Facebook" /> -->
-                <svg class="footer_social_img" width="32" height="32">
-                  <use xlink:href="./images/sprite.svg#facebook-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- <img class="footer_social_img" src="./images/insta-logo-footer.svg" alt="Instagram" /> -->
-                <svg class="footer_social_img" width="32" height="32">
-                  <use xlink:href="./images/sprite.svg#insta-icon"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="privacy-policy">
-          <a href="#">Політика конфіденсійності</a>
-          <p>© 2022 Дані захищені</p>
-        </div>
-      </address>
+        </nav>
+        <address class="footer-address">
+          <div class="address-container">
+            <ul class="address-list">
+              <li class="address-list-item">
+                <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+              </li>
+              <li class="address-list-item">
+                <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+              </li>
+              <li class="address-list-item">
+                <a
+                  href="https://maps.app.goo.gl/QbYPqjsE1LUxApm9A"
+                  target="_blank"
+                >
+                  Україна, м. Київ, вул. <br />
+                  Тараса Шевченка 5</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li>
+                <a href="#">
+                  <!-- <img class="footer_social_img" src="./images/tel-logo-footer.svg" alt="Tel" /> -->
+                  <svg class="footer_social_img" width="32" height="32">
+                    <use xlink:href="./images/sprite.svg#tel-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <img class="footer_social_img" src="./images/facebook-logo-footer.svg" alt="Facebook" /> -->
+                  <svg class="footer_social_img" width="32" height="32">
+                    <use xlink:href="./images/sprite.svg#facebook-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <img class="footer_social_img" src="./images/insta-logo-footer.svg" alt="Instagram" /> -->
+                  <svg class="footer_social_img" width="32" height="32">
+                    <use xlink:href="./images/sprite.svg#insta-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="privacy-policy">
+            <a href="#">Політика конфіденсійності</a>
+            <p>© 2022 Дані захищені</p>
+          </div>
+        </address>
+      </div>
       <img
         class="background-footer"
         src="./images/background_footer.png"
