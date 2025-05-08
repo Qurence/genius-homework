@@ -1,0 +1,45 @@
+.logo {
+    font-family: "Play", sans-serif;
+    width: 80px;
+    height: auto;
+    font-size: 22px;
+    color: var(--primary-blue);
+  }
+  
+  header{
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 56px;
+  }
+  
+  .nav-list li :hover {
+    font-size: 16px;
+    /* font-weight: 700; */
+    color: var(--primary-blue);
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .social-list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }

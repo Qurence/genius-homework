@@ -1,0 +1,60 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+}
+
+.hero {
+    background-image: url(../images/background_t.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(var(--index) * 30);
+}
+
+.container-hero {
+    margin-top: 150px;
+    /* margin-left: 350px; */
+    height: 408px;
+    width: 529px;
+}
+
+.hero-title {
+    font-size: calc(var(--index) * 4.8);
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    line-height: 120px;
+}
+
+.hero-button {
+    background-color: var(--primary-blue);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 32px;
+    height: 50px;
+    width: 200px;
+}
+
+.hero-button:hover {
+    background-color: transparent;
+    color: black;
+    border: var(--primary-blue) 1px solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.under-button-text {
+    font-size: 13px;
+    width: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+}

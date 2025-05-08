@@ -1,0 +1,41 @@
+// Fonts
+@import './utils/fonts';
+
+// Base
+@import './base';
+
+// Root
+@import './utils/variables';
+
+// Utils
+@import './utils/utils';
+
+// Header Section
+@import './components/header-section';
+
+/* Hero Section */
+@import './components/hero-section';
+
+/* About Section */
+@import './components/about-section';
+
+/* Why Section */
+@import './components/why-section';
+
+/* Procedures Section  */
+@import './components/procedures-section';
+
+/* Contact Section */
+@import './components/contact-section';
+
+/* Form */
+@import './components/form';
+
+// Footer Section
+@import './components/footer-section';
+
+/* Modal */
+@import './components/modal';
+
+/* Animations */
+@import './components/animations';

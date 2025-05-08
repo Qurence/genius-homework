@@ -1,0 +1,105 @@
+.contact-form {
+    width: 420px;
+    height: 500px;
+    background-color: var(--secondary-dark);
+    border-radius: 32px;
+    position: relative;
+}
+
+.form-text {
+    font-size: 20px;
+    color: var(--primary-white);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 290px;
+    text-align: center;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    max-height: 410px;
+    margin: 0;
+}
+
+.form-field {
+    position: relative;
+}
+
+.form-label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--primary-white);
+}
+
+.form-input {
+    width: 330px;
+    height: 50px;
+    border-radius: 32px;
+    border: var(--secondary-grey-2) 2px solid;
+    background-color: transparent;
+    color: var(--primary-white);
+    padding-left: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease-in-out;
+    padding: 16px 42px;
+}
+
+.form-input:focus {
+    background-color: var(--secondary-grey-2);
+}
+
+.form-input::placeholder {
+    color: var(--primary-white);
+    opacity: 0.85;
+}
+
+.form button {
+    background-color: var(--primary-blue);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 32px;
+    height: 50px;
+    margin-top: 10px;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.form button:hover {
+    background-color: transparent;
+    border: var(--primary-blue) 1px solid;
+}
+
+.form p {
+    font-size: 13px;
+    color: var(--secondary-grey-2);
+    margin-top: 20px;
+    text-align: center;
+    width: 68%;
+}
+
+.form p a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.background_form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    filter: invert(3%);
+}
