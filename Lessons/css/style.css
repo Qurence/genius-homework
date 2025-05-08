@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Base */
 * {
   margin-top: 0;
@@ -77,9 +76,15 @@ ul {
 }
 
 .button:hover {
+  color: var(--color-brand-dark);
   background-color: transparent;
-  color: var(--color-brand-normal);
-  border: 2px solid var(--color-brand-normal);
+}
+
+.button:disabled {
+  color: gray;
+  background-color: lightgray;
+  border-color: currentColor;
+  cursor: not-allowed;
 }
 
 .link {
@@ -128,7 +133,13 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
-  background-image: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%), url(../images/background-hero.jpg);
+  background-image: linear-gradient(
+      127deg,
+      rgba(18, 18, 17, 0.78) 0%,
+      rgba(18, 18, 17, 0.6) 63.89%,
+      rgba(18, 18, 17, 0) 100%
+    ),
+    url(../images/background-hero.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -211,6 +222,7 @@ ul {
 }
 
 /* Chef section */
+
 .chefs-list {
   display: flex;
   gap: 40px 30px;
@@ -265,7 +277,8 @@ ul {
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 /* Formats section */
@@ -274,7 +287,6 @@ ul {
   gap: 32px;
   align-items: center;
 }
-
 .formats-list {
   display: flex;
   gap: 20px;
@@ -283,7 +295,12 @@ ul {
 
 .format-card {
   padding: 24px;
-  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
   height: 444px;
   border: 1px solid lightgray; /* Remove */
   border-radius: 16px;
@@ -313,6 +330,7 @@ ul {
 }
 
 /* Carousel */
+
 .carousel-button {
   flex-shrink: 0;
   display: flex;
@@ -345,6 +363,7 @@ ul {
 }
 
 /* Contact section */
+
 .contact-section {
   padding-bottom: 96px;
 }
@@ -365,6 +384,7 @@ ul {
 }
 
 /* Footer section */
+
 .footer {
   padding: 32px 0;
   position: relative;
@@ -451,6 +471,7 @@ ul {
 }
 
 /* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -480,10 +501,112 @@ ul {
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  padding: 128px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:disabled{
+  border-color: lightgray;
+}
+
+.form-input:disabled::placeholder{
+  color: lightgray;
+}
+
+.form-input:focus {
+  border-color: var(--color-secondary-dark);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder{
+  color: var(--color-primary-dark);
+}
+
+.form-button{
+  display: block;
+  margin: 0 auto 24px;
+
+}
+
+.form-terms{
+  font-size: 12px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+  max-width: 210px;
+}
+
+.form-terms-link{
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+}
+
+/* Checkbox Terms */
+
+/* .checkbox{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.checkbox-input{
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
+}
+
+.checkbox-label{
+  padding-left: 24px;
+}
+
+.checkbox-label::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  margin-left: 110px;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 4px;
+  content: '';
+} */

@@ -1,0 +1,10 @@
+.link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .link:hover {
+    color: var(--color-brand-normal);
+    /* text-decoration: underline; */
+  }

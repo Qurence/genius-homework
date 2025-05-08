@@ -132,7 +132,7 @@ header{
 }
 
 .hero {
-  background-image: url(./images/background_t.jpg);
+  background-image: url(../images/background_t.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -288,7 +288,7 @@ header{
   position: absolute;
   width: 100%;
   height: 1000px;
-  background-image: url(./images/background_S3_x1_5.jpg);
+  background-image: url(../images/background_S3_x1_5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;

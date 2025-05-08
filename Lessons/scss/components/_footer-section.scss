@@ -1,0 +1,84 @@
+.footer {
+    padding: 32px 0;
+    position: relative;
+    background-image: url(../images/background-footer.png);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer::before,
+.footer::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.footer::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url(../images/decor-bread-small.png);
+}
+
+.footer::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url(../images/decor-bread-large.png);
+}
+
+.footer-container {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    padding: 32px 0;
+    gap: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-nav>* {
+    flex-grow: 1;
+}
+
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-address>* {
+    flex-grow: 1;
+}
+
+.address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.address-link:hover {
+    color: var(--color-brand-normal);
+    text-decoration: underline;
+    /* font-weight: 600; */
+}
+
+.address-social {
+    fill: var(--color-primary-light);
+}
+
+.address-social:hover {
+    fill: var(--color-brand-normal);
+}
+
+.address-copyright {
+    font-size: 14px;
+}

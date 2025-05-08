@@ -1,0 +1,30 @@
+.traditions-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
+.traditions-text .brand {
+    color: var(--color-brand-normal);
+    font-weight: 600;
+}
+
+.traditions-text .uppercase {
+    text-transform: uppercase;
+}
+
+.traditions-content {
+    max-width: 710px;
+}
+
+.traditions-text.limited {
+    max-width: 330px;
+}
