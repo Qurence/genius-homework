@@ -1,63 +1,53 @@
-.why-background {
-    position: absolute;
-    /* top: 140vh; */
-    top: calc(var(--index) * 50);
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
 .section-why {
     position: relative;
-}
 
-.section-why::before {
-    content: "";
-    /* top: -180px; */
-    top: calc(var(--index) * -6);
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    background-image: url(../images/background_S3_x1_5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
 
-.why-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: var(--primary-white);
+            border-radius: 18px;
+            height: 180px;
+            width: 400px;
+            box-shadow: inset 0 0 0 1px #ffffff, 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            cursor: default;
+        }
 
-.why-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: var(--primary-white);
-    border-radius: 18px;
-    height: 180px;
-    width: 400px;
-    box-shadow: inset 0 0 0 1px #ffffff, 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-    cursor: default;
-}
+        &__item:hover {
+            transform: scale(1.05);
+        }
+    }
 
-.why-list-item:hover {
-    transform: scale(1.05);
-}
+    & li svg {
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+        fill: var(--primary-blue);
+    }
 
-.section-why li svg {
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
-    fill: var(--primary-blue);
-}
+    & p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
 
-.section-why p {
-    font-size: 18px;
-    margin-top: 20px;
+    &::before {
+        content: "";
+        /* top: -180px; */
+        top: calc(var(--index) * -6);
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        background-image: url(../images/background_S3_x1_5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
 }

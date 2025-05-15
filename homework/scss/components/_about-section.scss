@@ -4,76 +4,75 @@
     width: 100%;
     gap: 40px;
     padding-bottom: 200px;
-}
 
-.section-about-text {
-    width: 1200px;
-}
+    &-text {
+        width: 1200px;
 
-.text-title {
-    font-size: 50px;
-    width: 400px;
-}
+        &__title {
+            font-size: 50px;
+            width: 400px;
+        }
 
-.text-paragraph {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 30px;
-}
+        &__paragraph {
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 30px;
+        }
 
-.section-about-text p span {
-    font-weight: bold;
-    color: black;
-}
+        & p span {
+            font-weight: bold;
+            color: black;
+        }
+    }
 
-.section-about-img {
-    width: 700px;
-    /* margin-left: 20%; */
-    margin-top: -150px;
-}
+    &-img {
+        width: 700px;
+        margin-top: -150px;
 
-.s_2_img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    position: absolute;
-}
+        &-images {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: absolute;
 
-.img1 {
-    margin-top: 350px;
-    margin-left: 150px;
-}
+            &__img1 {
+                margin-top: 350px;
+                margin-left: 150px;
+            }
 
-.img2 {
-    margin-left: -40px;
-}
+            &__img2 {
+                margin-left: -40px;
+            }
+        }
 
-.img_star {
-    position: absolute;
-    transition: fill 0.2s ease-in-out;
-}
+        &__star {
+            position: absolute;
+            transition: fill 0.2s ease-in-out;
 
-.star1 {
-    margin-top: 350px;
-    margin-left: 50px;
-    fill: var(--primary-dark-blue);
-    animation: rotate-scale 10s linear infinite;
-}
+            &__star1 {
+                margin-top: 350px;
+                margin-left: 50px;
+                fill: var(--primary-dark-blue);
+                animation: rotate-scale 10s linear infinite;
+            }
 
-.star2 {
-    margin-top: 60px;
-    margin-left: 400px;
-    fill: var(--primary-blue);
-    animation: rotate-scale 7s linear infinite;
-}
+            &__star2 {
+                margin-top: 60px;
+                margin-left: 400px;
+                fill: var(--primary-blue);
+                animation: rotate-scale 7s linear infinite;
+            }
 
-.star3 {
-    margin-top: 300px;
-    margin-left: 350px;
-    fill: var(--secondary-grey-2);
-    animation: rotate-scale 5s linear infinite;
-}
+            &__star3 {
+                margin-top: 300px;
+                margin-left: 350px;
+                fill: var(--secondary-grey-2);
+                animation: rotate-scale 5s linear infinite;
+            }
+        }
 
-.img_star:hover {
-    fill: var(--secondary-yellow);
+        &__star:hover {
+            fill: var(--secondary-yellow);
+        }
+    }
 }

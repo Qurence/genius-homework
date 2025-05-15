@@ -9,29 +9,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalSlides = slides.length;
   const slidesToShow = 3;
 
+  // Добавляем клоны
   for (let i = 0; i < totalSlides; i++) {
     const cloneFirst = slides[i].cloneNode(true);
     const cloneLast = slides[i].cloneNode(true);
-    slider.appendChild(cloneFirst);
-    slider.insertBefore(cloneLast, slides[0]);
+    slider.appendChild(cloneFirst); // Клоны в конец
+    slider.insertBefore(cloneLast, slides[0]); // Клоны в начало
   }
 
   const allSlides = document.querySelectorAll(".slider li");
   const totalSlidesWithClones = allSlides.length;
 
+  // Устанавливаем начальный индекс на первый оригинальный слайд
   currentIndex = totalSlides;
   slider.style.transform = `translateX(-${currentIndex * (100 / slidesToShow)}%)`;
 
   function updateSlider(transition = true) {
-    if (transition) {
-      slider.style.transition = "transform 0.5s ease-in-out";
-    } else {
-      slider.style.transition = "none";
-    }
+    slider.style.transition = transition ? "transform 0.5s ease-in-out" : "none";
     slider.style.transform = `translateX(-${currentIndex * (100 / slidesToShow)}%)`;
 
-
-    const dotIndex = currentIndex % totalSlides;
+    const dotIndex = (currentIndex - totalSlides) % totalSlides;
     dots.forEach((dot, index) => {
       dot.classList.toggle("active", index === dotIndex);
     });
@@ -39,10 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   slider.addEventListener("transitionend", () => {
     if (currentIndex >= totalSlidesWithClones - totalSlides) {
+      // Если достигли клона в конце, перемещаемся к оригинальному началу
       currentIndex = totalSlides;
       updateSlider(false);
     } else if (currentIndex < totalSlides) {
-      currentIndex = totalSlidesWithClones - totalSlides * 2;
+      // Если достигли клона в начале, перемещаемся к последнему оригинальному слайду
+      currentIndex = totalSlidesWithClones - totalSlides * 2 + totalSlides - 1;
       updateSlider(false);
     }
   });
