@@ -1,5 +1,5 @@
 .section-about {
-  margin-top: calc(var(--index) * 1.5);
+  margin-top: calc(var(--index) * -6);
   display: flex;
   width: 100%;
   gap: 40px;
@@ -7,6 +7,7 @@
 
   @media screen and (min-width: $bp-tablet) {
     padding-bottom: 200px;
+    margin-top: calc(var(--index) * 1.5);
   }
 
   &__star {

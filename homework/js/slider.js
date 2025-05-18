@@ -1,32 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector(".slider");
-  const slides = document.querySelectorAll(".slider li");
+  let slides = document.querySelectorAll(".slider li");
   const prevBtn = document.querySelector(".prev");
   const nextBtn = document.querySelector(".next");
   const dots = document.querySelectorAll(".dot");
+
   let currentIndex = 0;
-
   const totalSlides = slides.length;
-  const slidesToShow = 3;
+  let slidesToShow = getSlidesToShow();
 
-  // Добавляем клоны
+  // Клоны
   for (let i = 0; i < totalSlides; i++) {
     const cloneFirst = slides[i].cloneNode(true);
     const cloneLast = slides[i].cloneNode(true);
-    slider.appendChild(cloneFirst); // Клоны в конец
-    slider.insertBefore(cloneLast, slides[0]); // Клоны в начало
+    slider.appendChild(cloneFirst);
+    slider.insertBefore(cloneLast, slides[0]);
   }
 
-  const allSlides = document.querySelectorAll(".slider li");
-  const totalSlidesWithClones = allSlides.length;
+  // Обновим список всех слайдов
+  slides = document.querySelectorAll(".slider li");
+  const totalSlidesWithClones = slides.length;
 
-  // Устанавливаем начальный индекс на первый оригинальный слайд
+  // Устанавливаем ширину каждому слайду
+  function setSlideWidths() {
+    const slideWidth = slider.offsetWidth / slidesToShow;
+    slides.forEach((slide) => {
+      slide.style.width = `${slideWidth}px`;
+    });
+  }
+
+  setSlideWidths();
+
   currentIndex = totalSlides;
-  slider.style.transform = `translateX(-${currentIndex * (100 / slidesToShow)}%)`;
+  updateSlider(false);
+
+  function getSlidesToShow() {
+    return window.innerWidth <= 768 ? 1 : 3;
+  }
 
   function updateSlider(transition = true) {
+    const slideWidth = slider.offsetWidth / slidesToShow;
     slider.style.transition = transition ? "transform 0.5s ease-in-out" : "none";
-    slider.style.transform = `translateX(-${currentIndex * (100 / slidesToShow)}%)`;
+    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 
     const dotIndex = (currentIndex - totalSlides) % totalSlides;
     dots.forEach((dot, index) => {
@@ -36,11 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   slider.addEventListener("transitionend", () => {
     if (currentIndex >= totalSlidesWithClones - totalSlides) {
-      // Если достигли клона в конце, перемещаемся к оригинальному началу
       currentIndex = totalSlides;
       updateSlider(false);
     } else if (currentIndex < totalSlides) {
-      // Если достигли клона в начале, перемещаемся к последнему оригинальному слайду
       currentIndex = totalSlidesWithClones - totalSlides * 2 + totalSlides - 1;
       updateSlider(false);
     }
@@ -63,5 +76,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  updateSlider();
+  let startX = 0;
+
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        currentIndex++;
+      } else {
+        currentIndex--;
+      }
+      updateSlider();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    slidesToShow = getSlidesToShow();
+    setSlideWidths();
+    updateSlider(false);
+  });
 });

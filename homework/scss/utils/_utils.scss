@@ -1,9 +1,14 @@
 .section-title {
   font-size: 50px;
-  width: 400px;
+
   margin: 0 auto;
   text-align: center;
   padding-bottom: 48px;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 50px;
+    width: 400px;
+  }
 }
 
 .body-no-scroll {
@@ -34,3 +39,4 @@
   visibility: hidden;
   pointer-events: none;
 }
+
