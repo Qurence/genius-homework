@@ -1,112 +1,149 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/icon_.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HomeWork</title>
-  <link rel="stylesheet" href="./css/main.min.css" />
-  <link rel="icon" type="image/x-icon" href="./images/icon_.ico" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container header__container">
-      <a href="#">
-        <p lang="en" class="logo">Beauty Zone</p>
-      </a>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li><a href="#section_about">Про нас</a></li>
-          <li><a href="#section_why">Чому ми</a></li>
-          <li><a href="#section_procedures">Наші процедури</a></li>
-          <li><a href="#section_contact">Контакти</a></li>
-        </ul>
-      </nav>
-      <div>
-        <ul class="header__social__list">
-          <li class="header__social__list__li">
-            <a href="#">
-              <!-- <img src="./images/telephone-icon.svg" alt="Tel" /> -->
-              <svg width="32" height="32">
-                <use xlink:href="./images/sprite.svg#tel-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__social__list__li">
-            <a href="#">
-              <!-- <img src="./images/uit_facebook-f.svg" alt="Facebook" /> -->
-              <svg width="32" height="32">
-                <use xlink:href="./images/sprite.svg#facebook-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__social__list__li">
-            <a href="#">
-              <!-- <img src="./images/instagram-logo.svg" alt="Instagram" /> -->
-              <svg width="32" height="32">
-                <use xlink:href="./images/sprite.svg#insta-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section id="section_hero" class="section-hero section">
-      <div class="container">
-        <div class="section-hero__container">
-          <p>Косметологічна клініка</p>
-          <h1 class="section-hero__title">Beauty Zone</h1>
-          <button class="section-hero__button modal-btn-open" type="button">
-            Замовити дзвінок
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#">
+          <p lang="en" class="logo">Beauty Zone</p>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li><a href="#section_about">Про нас</a></li>
+            <li><a href="#section_why">Чому ми</a></li>
+            <li><a href="#section_procedures">Наші процедури</a></li>
+            <li><a href="#section_contact">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header__social">
+          <ul class="header__social__list">
+            <li class="header__social__list__li">
+              <a href="#">
+                <!-- <img src="./images/telephone-icon.svg" alt="Tel" /> -->
+                <svg width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#tel-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__social__list__li">
+              <a href="#">
+                <!-- <img src="./images/uit_facebook-f.svg" alt="Facebook" /> -->
+                <svg width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__social__list__li">
+              <a href="#">
+                <!-- <img src="./images/instagram-logo.svg" alt="Instagram" /> -->
+                <svg width="32" height="32">
+                  <use xlink:href="./images/sprite.svg#insta-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="header__burger menu-btn-open" type="=button">
+          <svg width="24" height="24">
+            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            Close
           </button>
-          <p class="section-hero__under__button__text">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
         </div>
       </div>
-    </section>
-    <section id="section_about" class="section">
-      <div class="container section-about">
-        <div class="section-about-text">
-          <h1 class="section-about-text__title">
-            Перевтілюйтесь в <span>Beauty Zone!</span>
-          </h1>
-          <p class="section-about-text__paragraph">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="section-about-text__paragraph">
-            B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти якості
-            та приємний сервіс. Наші косметологічні процедури та препарати
-            допоможуть вам підтримувати свою красу та молодість. <br />
-            З нами краса назавжди!
-          </p>
+    </header>
+    <main>
+      <section id="section_hero" class="section-hero section">
+        <div class="container">
+          <div class="section-hero__container">
+            <p>Косметологічна клініка</p>
+            <h1 class="section-hero__title">Beauty Zone</h1>
+            <button class="section-hero__button modal-btn-open" type="button">
+              Замовити дзвінок
+            </button>
+            <p class="section-hero__under__button__text">
+              Запишись та отримай безкоштовну консультацію нашого косметолога
+            </p>
+          </div>
         </div>
-        <div class="section-about-img">
-          <img class="section-about-img-images section-about-img-images__img1" src="./images/s_2_img1.jpg" alt="Дівчина до процедур"  />
-          <img  class="section-about-img-images section-about-img-images__img2"  src="./images/s_2_img2.jpg" alt="Дівчина після процедур"/>
-          <svg class="section-about-img__star section-about-img__star__star1" width="64" height="64">
-            <use xlink:href="./images/sprite.svg#icon-Star-1"></use>
-          </svg>
-          <svg class="section-about-img__star section-about-img__star__star2" width="40" height="40">
-            <use xlink:href="./images/sprite.svg#icon-Star-2"></use>
-          </svg>
-          <svg class="section-about-img__star section-about-img__star__star3" width="16" height="16">
-            <use xlink:href="./images/sprite.svg#icon-Star-2"></use>
-          </svg>
+      </section>
+      <section id="section_about" class="section">
+        <div class="container section-about">
+          <div class="section-about-text">
+            <h1 class="section-about-text__title">
+              Перевтілюйтесь в <span>Beauty Zone!</span>
+            </h1>
+            <p class="section-about-text__paragraph">
+              Наша косметологічна клініка пропонує вам професійні послуги з
+              догляду за шкірою обличчя та тіла.
+            </p>
+            <p class="section-about-text__paragraph">
+              B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти якості
+              та приємний сервіс. Наші косметологічні процедури та препарати
+              допоможуть вам підтримувати свою красу та молодість. <br />
+              З нами краса назавжди!
+            </p>
+            <svg
+              class="section-about-img__star section-about__star"
+              width="64"
+              height="64"
+            >
+              <use xlink:href="./images/sprite.svg#icon-Star-1"></use>
+            </svg>
+          </div>
+          <div class="section-about-img">
+            <img
+              class="section-about-img-images section-about-img-images__img1"
+              srcset="./images/s_2_img1.jpg 1x, ./images/s_2_img1@2x.jpg 2x"
+              src="./images/s_2_img1.jpg"
+              alt="Дівчина до процедур"
+            />
+            <img
+              class="section-about-img-images section-about-img-images__img2"
+              srcset="./images/s_2_img2.jpg 1x, ./images/s_2_img2@2x.jpg 2x"
+              src="./images/s_2_img2.jpg"
+              alt="Дівчина після процедур"
+            />
+            <svg
+              class="section-about-img__star section-about-img__star__star1"
+              width="64"
+              height="64"
+            >
+              <use xlink:href="./images/sprite.svg#icon-Star-1"></use>
+            </svg>
+            <svg
+              class="section-about-img__star section-about-img__star__star2"
+              width="40"
+              height="40"
+            >
+              <use xlink:href="./images/sprite.svg#icon-Star-2"></use>
+            </svg>
+            <svg
+              class="section-about-img__star section-about-img__star__star3"
+              width="16"
+              height="16"
+            >
+              <use xlink:href="./images/sprite.svg#icon-Star-2"></use>
+            </svg>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="section_why" class="section section-why">
+      </section>
+      <section id="section_why" class="section section-why">
       <div class="container">
         <h1 class="section-title">Чому люди <span>обирають нас</span></h1>
         <ul class="section-why__list">
           <li class="section-why__list__item">
             <article>
-              <!-- <img src="./images/S_3_1.svg" alt="1" /> -->
               <svg width="32" height="32">
                 <use xlink:href="./images/sprite.svg#icon-S_3_1"></use>
               </svg>
@@ -118,7 +155,6 @@
           </li>
           <li class="section-why__list__item">
             <article>
-              <!-- <img src="./images/S_3_2.svg" alt="2" /> -->
               <svg width="32" height="32">
                 <use xlink:href="./images/sprite.svg#icon-S_3_2"></use>
               </svg>
@@ -130,7 +166,6 @@
           </li>
           <li class="section-why__list__item">
             <article>
-              <!-- <img src="./images/S_3_3.svg" alt="3" /> -->
               <svg width="32" height="32">
                 <use xlink:href="./images/sprite.svg#icon-S_3_3"></use>
               </svg>
@@ -143,7 +178,7 @@
         </ul>
       </div>
     </section>
-    <section id="section_procedures" class="section">
+      <!-- <section id="section_procedures" class="section">
       <div class="container">
         <h1 class="section-title">Наші <span>процедури</span></h1>
         <div class="slider-wrapper">
@@ -169,8 +204,6 @@
               </li>
             </ul>
           </div>
-          <!-- <button class="prev">❮</button> -->
-          <!-- <button class="next">❯</button> -->
           <button class="next">
             <svg class="carousel-arrow" width="16" height="16">
               <use xlink:href="./images/sprite.svg#icon-Arrow"></use>
@@ -188,11 +221,10 @@
           </div>
         </div>
       </div>
-    </section>
-    <section id="section_contact" class="section-contact section">
+    </section> -->
+      <!-- <section id="section_contact" class="section-contact section">
       <div class="container">
         <h1 class="section-title">Як нас <span>знайти</span></h1>
-        <!-- MAP and Contact Form -->
         <div class="section-contact-container">
           <div class="section-contact-container__map">
             <iframe
@@ -229,9 +261,9 @@
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
+    </section> -->
+    </main>
+    <!-- <footer class="footer">
     <div class="container footer__container">
       <nav class="footer-nav">
         <div>
@@ -293,48 +325,79 @@
     </div>
     <img class="background-footer" src="./images/background_footer.png" alt="background-footer" />
     <img class="background-img" src="./images/img_footer.png" alt="img-footer" />
-  </footer>
-  <div class="backdrop is-hidden modal-close">
-    <div class="modal">
-      <button class="modal-btn-close" type="button">
-        <svg class="icon-btn-close" width="32" height="32">
-          <use xlink:href="./images/sprite.svg#icon-btn-close"></use>
-        </svg>
-      </button>
-      <h1 class="modal__text">Замовити дзвінок</h1>
-      <div>
-        <img class="background_form background_form-modal" src="./images/background_form.png" alt="Линии" />
-        <h2 class="form-text modal-form__text">
-          Запишіться <span>безкоштовно</span> та отримайте подарунок
-        </h2>
-        <form name="modal-form" method="post" class="contact-form form" autocomplete="off">
-          <div class="form-field">
-            <label for="name"></label>
-            <input class="form-input" type="text" id="name" name="name" placeholder="Ваше ім'я та призвіще"
-              pattern="^\S+\s+\S+.*$" title="Введіть щонайменше два слова" required />
-          </div>
-          <div class="form-field">
-            <label for="tel"></label>
-            <input class="form-input" type="tel" id="tel" name="tel" placeholder="Ваш номер телефону"
-              pattern="^\+[0-9]{12}" title="Введіть номер телефону, починаючи з +380" required />
-          </div>
-          <div class="form-field">
-            <label for="email"></label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="Ваша електронна пошта"
-              required />
-          </div>
-          <button type="submit">Записатись безкоштовно</button>
-          <p>
-            Натискаючи на кнопку я погоджуюсь з
-            <a href="#">політикою конфіденційності</a>
-          </p>
-        </form>
+  </footer> -->
+    <div class="backdrop is-hidden modal-close">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <svg class="icon-btn-close" width="32" height="32">
+            <use xlink:href="./images/sprite.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+        <h1 class="modal__text">Замовити дзвінок</h1>
+        <div>
+          <img
+            class="background_form background_form-modal"
+            src="./images/background_form.png"
+            alt="Линии"
+          />
+          <h2 class="form-text modal-form__text">
+            Запишіться <span>безкоштовно</span> та отримайте подарунок
+          </h2>
+          <form
+            name="modal-form"
+            method="post"
+            class="contact-form form"
+            autocomplete="off"
+          >
+            <div class="form-field">
+              <label for="name"></label>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше ім'я та призвіще"
+                pattern="^\S+\s+\S+.*$"
+                title="Введіть щонайменше два слова"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="tel"></label>
+              <input
+                class="form-input"
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="Ваш номер телефону"
+                pattern="^\+[0-9]{12}"
+                title="Введіть номер телефону, починаючи з +380"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="email"></label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ваша електронна пошта"
+                required
+              />
+            </div>
+            <button type="submit">Записатись безкоштовно</button>
+            <p>
+              Натискаючи на кнопку я погоджуюсь з
+              <a href="#">політикою конфіденційності</a>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="./js/modal.js" type="module"></script>
-  <script src="./js/slider.js"></script>
-</body>
-
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/slider.js"></script>
+  </body>
 </html>
