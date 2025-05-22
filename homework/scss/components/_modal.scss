@@ -10,7 +10,6 @@
   background-color: rgba(116, 114, 114, 0.5);
   padding: 20px 20px;
   transition: opacity 0.2s ease-in-out, visibility 0.3s ease-in-out;
-
 }
 
 .modal {
@@ -30,9 +29,12 @@
     padding: 42px 144px;
   }
 
-  &-form__inputs{
+  &-form__inputs {
+    display: flex;
+    justify-content: center;
+
     & form {
-        width: 100%;
+      width: 100%;
     }
   }
 

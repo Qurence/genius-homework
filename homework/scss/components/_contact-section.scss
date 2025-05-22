@@ -12,7 +12,7 @@
   position: relative;
   flex-direction: column-reverse;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     flex-direction: row;
     gap: 32px;
   }

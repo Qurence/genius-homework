@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalSlides = slides.length;
   let slidesToShow = getSlidesToShow();
 
-  // Клоны
   for (let i = 0; i < totalSlides; i++) {
     const cloneFirst = slides[i].cloneNode(true);
     const cloneLast = slides[i].cloneNode(true);
@@ -17,11 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     slider.insertBefore(cloneLast, slides[0]);
   }
 
-  // Обновим список всех слайдов
   slides = document.querySelectorAll(".slider li");
   const totalSlidesWithClones = slides.length;
 
-  // Устанавливаем ширину каждому слайду
   function setSlideWidths() {
     const slideWidth = slider.offsetWidth / slidesToShow;
     slides.forEach((slide) => {
@@ -35,7 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSlider(false);
 
   function getSlidesToShow() {
-    return window.innerWidth <= 768 ? 1 : 3;
+    if (window.innerWidth <= 768) {
+      return 1;
+    } else if (window.innerWidth <= 1200) {
+      return 2;
+    } else {
+      return 3;
+    }
   }
 
   function updateSlider(transition = true) {

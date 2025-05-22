@@ -21,15 +21,11 @@
   margin: 0;
 
   & li {
-    
-    flex: 0 0 100%;
+    flex: 0 0 auto;
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
-
-    @media (min-width: $bp-tablet) {
-      flex: 0 0 33.33%;
-    }
+    align-content: center;
   }
 
   & article {
@@ -64,7 +60,6 @@
 }
 
 /* Img slider */
-
 .image-container {
   position: relative;
   display: inline-block;
@@ -102,7 +97,7 @@
   transition: border-color 0.2s ease;
   display: none;
 
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-tablet) { 
     display: block;
   }
 }
@@ -117,11 +112,18 @@
 
 .prev {
   left: -50px;
+  @media (max-width: $bp-desktop) {
+    left: 0px;
+  }
 }
 
 .next {
   right: -50px;
 
+  @media (max-width: $bp-desktop) {
+    right: 0px;
+  }
+  
   & .carousel-arrow {
     transform: scaleX(-1);
   }
@@ -145,5 +147,3 @@
 .dot.active {
   background-color: var(--secondary-grey-1);
 }
-
-
