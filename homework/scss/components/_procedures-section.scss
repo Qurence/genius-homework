@@ -5,6 +5,10 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+
+  @media screen and (min-width: $bp-tablet) and (max-width: $bp-desktop){
+    max-width: 75%;
+  }
 }
 
 .slider-container {
@@ -26,6 +30,10 @@
     padding: 10px;
     text-align: center;
     align-content: center;
+
+    @media screen and (min-width: $bp-tablet) and (max-width: $bp-desktop){
+      width: 200px;
+    }
   }
 
   & article {
@@ -112,7 +120,11 @@
 
 .prev {
   left: -50px;
-  @media (max-width: $bp-desktop) {
+
+  @media screen and (max-width: $bp-desktop) {
+    left: -40px;
+  }
+  @media (min-width: $bp-desktop) and (max-width: 1300px) {
     left: 0px;
   }
 }
@@ -120,7 +132,11 @@
 .next {
   right: -50px;
 
-  @media (max-width: $bp-desktop) {
+  @media screen and (max-width: $bp-desktop) {
+    right: -40px;
+  }
+
+  @media (min-width: $bp-desktop) and (max-width: 1300px) {
     right: 0px;
   }
   

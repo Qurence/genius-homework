@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const slideWidth = slider.offsetWidth / slidesToShow;
     slides.forEach((slide) => {
       slide.style.width = `${slideWidth}px`;
+      slide.style.padding = '10px';
     });
   }
 
